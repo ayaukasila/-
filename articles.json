@@ -1,0 +1,105 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "New Study Reveals Surprising Health Benefits of Coffee",
+      "date": "2024-10-15",
+      "category": "Health",
+      "content": "A new study published this week has found that drinking coffee may have numerous health benefits...",
+      "views": 150,
+      "wordCount": 500,
+      "image": "images/1.png",
+      "additionalInfo": "Additional info for the first article goes here. You can add unique details about this study on coffee."
+  },
+      {
+          "id": 2,
+          "title": "Tech Giants Announce Collaboration on AI Safety Standards",
+          "date": "2024-11-01",
+          "category": "Technology",
+          "content": "In a groundbreaking move, several major tech companies have come together to develop common standards for AI safety...",
+          "views": 300,
+          "wordCount": 650,
+          "image": "images/2.png"
+      },
+      {
+          "id": 3,
+          "title": "Local Art Fair Brings Creativity to the Community",
+          "date": "2024-09-22",
+          "category": "Arts",
+          "content": "This year’s local art fair saw a record attendance as artists and creators gathered to display their works...",
+          "views": 85,
+          "wordCount": 400,
+          "image": "images/3.png"
+      },
+      {
+          "id": 4,
+          "title": "Experts Predict Economic Trends for 2025",
+          "date": "2024-10-05",
+          "category": "Finance",
+          "content": "With 2025 on the horizon, financial experts have released their predictions for economic trends...",
+          "views": 220,
+          "wordCount": 700,
+          "image": "images/4.png"
+      },
+      {
+          "id": 5,
+          "title": "Climate Change and the Future of Renewable Energy",
+          "date": "2024-11-02",
+          "category": "Environment",
+          "content": "As climate change continues to be a pressing global issue, renewable energy sources are becoming increasingly important...",
+          "views": 400,
+          "wordCount": 800,
+          "image": "images/5.png"
+      },
+      {
+          "id": 6,
+          "title": "Breakthroughs in Cancer Research Offer New Hope",
+          "date": "2024-08-30",
+          "category": "Health",
+          "content": "Recent breakthroughs in cancer research have led to promising new treatments that may improve survival rates...",
+          "views": 130,
+          "wordCount": 550,
+          "image": "images/6.png"
+      },
+      {
+          "id": 7,
+          "title": "Guide to Traveling on a Budget in 2025",
+          "date": "2024-10-20",
+          "category": "Travel",
+          "content": "With travel becoming more accessible, many people are looking for ways to explore the world on a budget...",
+          "views": 90,
+          "wordCount": 450,
+          "image": "images/7.png"
+      },
+      {
+          "id": 8,
+          "title": "The Rise of Electric Vehicles in the Automotive Industry",
+          "date": "2024-09-15",
+          "category": "Automotive",
+          "content": "Electric vehicles are gaining popularity as consumers seek eco-friendly alternatives to gasoline-powered cars...",
+          "views": 250,
+          "wordCount": 600,
+          "image": "images/8.png"
+      },
+      {
+          "id": 9,
+          "title": "How Meditation Can Improve Mental Health",
+          "date": "2024-11-04",
+          "category": "Health",
+          "content": "In a fast-paced world, meditation is increasingly recognized as a powerful tool for managing stress...",
+          "views": 175,
+          "wordCount": 500,
+          "image": "images/9.png"
+      },
+      {
+          "id": 10,
+          "title": "The Impact of Social Media on Modern Relationships",
+          "date": "2024-10-12",
+          "category": "Society",
+          "content": "Social media has changed the way people connect, but what impact does it have on relationships? Experts discuss...",
+          "views": 205,
+          "wordCount": 550,
+          "image": "images/10.png"
+      }
+  ]
+}

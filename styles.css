@@ -1,0 +1,293 @@
+:root {
+    --background-color: #fff5ee;
+    --text-color: #333333;
+    --card-bg-color: #ffffff;
+    --accent-color: #ff1493;
+    --navbar-bg-color: #ff1493;
+    --navbar-text-color: #ffffff;
+    --navbar-hover-color: #ffded3;
+    --title-font: 'Playfair Display', serif;
+    --body-font: 'Montserrat', sans-serif;
+}
+
+[data-theme="dark"] {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --card-bg-color: #444444;
+    --accent-color: #ffb6c1;
+    --navbar-bg-color: #222222;
+    --navbar-text-color: #ffb6c1;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#search-input {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Стили для navbar */
+.navbar {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--navbar-text-color) !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--navbar-hover-color) !important;
+}
+
+.navbar .btn {
+    color: var(--navbar-text-color);
+    border-color: var(--navbar-text-color);
+}
+
+.navbar .btn:hover {
+    background-color: var(--navbar-text-color);
+    color: var(--navbar-bg-color);
+}
+
+.navbar-toggler {
+    font-size: 1.5rem;
+    color: #ffffff;
+    border: none;
+    background: none;
+    margin-right: 10px;
+    display: block;
+}
+
+/* Стиль для заголовка "Most Popular Article" */
+#most-popular-title {
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Ширина карточки самого популярного артикля */
+#most-popular-article {
+    width: 100%;
+    max-width: 960px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+#most-popular-article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+#most-popular-article .card-title,
+#most-popular-article .card-text,
+#most-popular-article .card-footer {
+    text-align: center;
+}
+
+/* Стили для карточек */
+.card {
+    background-color: var(--card-bg-color);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    margin: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 460px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 10px 0 8px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-footer {
+    background-color: #f4f4f4;
+    color: #777777;
+    font-size: 0.85rem;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки "Read More" */
+.card .read-more {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.card .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Секция категорий и сортировки */
+#filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Стили для кнопок сортировки */
+#sort-options {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.sort-button {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sort-button.active, .sort-button:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* Стили для ссылок категорий */
+#category-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category-link:hover {
+    text-decoration: underline;
+}
+
+/* Стили для бокового меню */
+#sidebarMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    z-index: 1000;
+    padding-top: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidebarMenu.show {
+    transform: translateX(0);
+}
+
+.close-sidebar {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    width: 100%;
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    padding: 0 10px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: var(--navbar-hover-color);
+}
+
+.footer .social-icons i {
+    font-size: 1.2rem;
+    margin: 0 10px;
+    color: var(--navbar-text-color);
+    transition: color 0.2s;
+}
+
+.footer .social-icons i:hover {
+    color: var(--navbar-hover-color);
+}
